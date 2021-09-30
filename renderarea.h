@@ -13,6 +13,11 @@ public:
    QSize minimumSizeHint() const override;
    QSize sizeHint() const override;
 
+   void SetBackgroundColor(QColor* backgroundColor);
+   QColor* GetBackgroundColor() const;
+
+   enum Shapes{ASTROID, CICLOID, HUYGEN_CICLOID, HYPO_CICLOID};
+
 protected:
    void paintEvent(QPaintEvent* event) override;
 

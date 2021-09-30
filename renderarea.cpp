@@ -27,3 +27,13 @@ void RenderArea::paintEvent(QPaintEvent *event)
     painter->drawRect(rect());
     painter->drawLine(rect().topLeft(), rect().bottomRight());
 }
+
+void RenderArea::SetBackgroundColor(QColor* backgroundColor)
+{
+    this->backgroundColor = backgroundColor;
+}
+
+QColor* RenderArea::GetBackgroundColor() const
+{
+    return backgroundColor;
+}
